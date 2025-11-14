@@ -1,0 +1,117 @@
+/* TEXTO PROMOCIONAL */
+#section-image .promo-text {
+  text-align: center;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Títulos */
+#section-image .promo-text h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #ffd7b5; /* tono cálido que combina con el gradiente */
+}
+
+#section-image .promo-text h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+/* Párrafos */
+#section-image .promo-text p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #fdfdfd;
+  max-width: 600px;
+}
+
+/* Botón CTA */
+#section-image .promo-text .cta-button {
+  background-color: #f97316;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#section-image .promo-text .cta-button:hover {
+  background-color: #ffae42;
+  transform: scale(1.05);
+}
+
+/* ---- Media Queries ---- */
+
+/* Tablets */
+@media (max-width: 1000px) {
+  #section-image .promo-text {
+    width: 70%;
+  }
+
+  #section-image .promo-text h2 {
+    font-size: 1.8rem;
+  }
+
+  #section-image .promo-text h3 {
+    font-size: 1.1rem;
+  }
+
+  #section-image .promo-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  #section-image .promo-text {
+    width: 90%;
+    padding: .5rem 0.5rem;
+    gap: 0.5rem;
+  }
+
+  #section-image .promo-text h2 {
+    font-size: 1.6rem;
+  }
+
+  #section-image .promo-text h3 {
+    font-size: 1rem;
+  }
+
+  #section-image .promo-text p {
+    font-size: 0.9rem;
+  }
+
+  #section-image .promo-text .cta-button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+  #section-image .promo-text {
+    width: 100%;
+  }
+
+  #section-image .promo-text h2 {
+    font-size: 1.4rem;
+  }
+
+  #section-image .promo-text p {
+    font-size: 0.85rem;
+  }
+
+  #section-image .promo-text .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}

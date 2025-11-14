@@ -1,0 +1,77 @@
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
+/* Animación sutil exclusiva para el enlace */
+@keyframes pulse-btn-unico {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Enlace exclusivo */
+a#btn-unico-001 {
+  all: unset;
+  display: flex; /* cambia a flex para centrar fácilmente el texto */
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  height: 30px;
+
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+
+  /* Animación */
+  animation: pulse-btn-unico var(--ease-elastic-in-1) 2000ms infinite alternate;
+  max-width: 200px;
+  margin: 0 auto; /* esto centra el botón dentro del contenedor */
+}
+
+
+/* Efecto blurry exclusivo del enlace */
+a#btn-unico-001::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate3d(0, 0, -1px);
+  background: hsl(0, 66%, 39%);
+  filter: blur(6px);
+  z-index: -1;
+  border-radius: 6px;
+}
+
+/* Hover, focus y active solo para este enlace */
+a#btn-unico-001:hover {
+  background-color: hsl(19, 68%, 65%);
+  box-shadow: 0 0 6px hsl(12, 100%, 60%);
+}
+
+a#btn-unico-001:focus {
+  outline: 2px solid hsl(12, 90%, 63%);
+  outline-offset: 2px;
+}
+
+a#btn-unico-001:active {
+  transform: scale(1.05);
+  box-shadow: 0 0 3px hsl(12, 100%, 60%);
+}
+
+@media (max-width: 1000px) {
+  a#btn-unico-001 {
+    
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}

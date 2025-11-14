@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="CSS/hr.css" />
+    <link rel="stylesheet" href="css/texto.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/contador.css" />
+    <link rel="stylesheet" href="css/efectowave.css" />
+    <link rel="stylesheet" href="CSS/form.css" />
+    <link rel="stylesheet" href="CSS/expert.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <script>
+      (function (c, s, q, u, a, r, e) {
+        c.hj =
+          c.hj ||
+          function () {
+            (c.hj.q = c.hj.q || []).push(arguments);
+          };
+        c._hjSettings = { hjid: a };
+        r = s.getElementsByTagName("head")[0];
+        e = s.createElement("script");
+        e.async = true;
+        e.src = q + c._hjSettings.hjid + u;
+        r.appendChild(e);
+      })(
+        window,
+        document,
+        "https://static.hj.contentsquare.net/c/csq-",
+        ".js",
+        6576274
+      );
+    </script>
+  </head>
+
+  <body>
+    <!-- RPIMER BLOQUE PRESENTACIÓN -->
+    <div id="header-layout">
+      <h3 style="color: aliceblue">
+        ¡CONFERENCIA SIN COSTO, PRESENCIAL Y EN VIVO!
+      </h3>
+    </div>
+
+    <div class="ocean">
+      <div class="wave"></div>
+      <div class="wave"></div>
+
+      <div class="contador" id="contador">
+        <div class="contador-item">
+          <div class="contador-num" id="dias">00</div>
+          <div class="contador-label">Días</div>
+        </div>
+        <div class="contador-item">
+          <div class="contador-num" id="horas">00</div>
+          <div class="contador-label">Horas</div>
+        </div>
+        <div class="contador-item">
+          <div class="contador-num" id="minutos">00</div>
+          <div class="contador-label">Min</div>
+        </div>
+        <div class="contador-item">
+          <div class="contador-num" id="segundos">00</div>
+          <div class="contador-label">Seg</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="section-image">
+      <img
+        src="images\expert.webp"
+        alt="imagen referente al proposito de la landing page, mostrando al experto que lo impartira"
+      />
+
+      <div class="promo-text">
+        <h2>MODALIDAD 40:</h2>
+        <h3>¡LA OPORTUNIDAD QUE MILLONES ESTAN DESAPROVECHANDO!</h3>
+        <p>
+          En esta conferencia vas a aprender: Cómo funciona la Modalidad 40 y
+          quiénes pueden aprovecharla. Qué pasos prácticos debes seguir para
+          maximizar tu pensión. Errores comunes que hacen perder años y dinero y
+          cómo evitarlos.
+        </p>
+        <p>
+          Participa en nuestro evento
+          <strong>presencial y en línea</strong> para conocer todos los detalles
+          y resolver tus dudas con expertos.
+        </p>
+        <div>
+          <a id="btn-unico-001" href="#destino"> RESERVAR MI LUGAR </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO Y INFORMACION RELEVANTE -->
+    <section id="section-form">
+      <div class="card">
+        <div class="card-info">
+          <ul class="conference-benefits">
+            <li>
+              <strong>¡Regístrate gratis</strong> y asegura tu lugar en la
+              conferencia!
+              <br />
+              <span>Cupo limitado tanto presencial como en línea.</span>
+            </li>
+            <li>
+              <em
+                >“Aprende cómo funciona la Modalidad 40 y descubre si tú puedes
+                aprovecharla para aumentar tu pensión.”</em
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form class="formulario" id="formularioleads">
+        <h2>Regístrate</h2>
+
+        <label>Nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" />
+
+        <label>Teléfono:</label>
+        <input type="tel" id="telefono" placeholder="(000) 000 0000" />
+
+        <label>Seleccione</label>
+        <select name="dropmod" id="dropmodalidad">
+          <option value="Presencial">Presencial</option>
+          <option value="En linea">En linea</option>
+        </select>
+        <br /><br />
+
+        <button type="submit">Enviar</button>
+        <h5>
+          🔒 Tus datos están seguros y solo los usaremos para enviarte el acceso
+          a la conferencia.
+        </h5>
+      </form>
+    </section>
+
+    <!-- TERCER BLOQUE, INFORMACIÓN DETALLADA DEL EXPERTO -->
+
+    <div class="contenedor-principal">
+      <div class="seccion-imagen">
+        <div class="contenedor-imagen">
+          <img
+            src="images/expert2.webp"
+            alt="Jesús Omar Aguilar - Especialista en Pensiones"
+            class="imagen-especialista"
+          />
+        </div>
+      </div>
+
+      <div class="seccion-contenido">
+        <div class="header">
+          <div class="nombre">Jesús Omar Aguilar Mendivil</div>
+          <div class="especialidad">Tu Especialista en Pensiones IMSS</div>
+          <div class="separador"></div>
+        </div>
+
+        <div class="experiencia">
+          <span class="numero-destacado">+7 Años</span>
+          <span class="texto-experiencia">Transformando Futuros</span>
+          <p class="texto-experiencia" style="margin-top: 10px">
+            Asesor especializado en pensiones IMSS con más de 7 años de
+            experiencia ayudando a más de <strong>1,500 personas</strong> a
+            mejorar o obtener su pensión.
+          </p>
+        </div>
+
+        <div class="seccion-en-vivo">
+          <div class="titulo-seccion">
+            <span>Lo que verás en vivo</span>
+            <span class="badge-live">EN VIVO</span>
+          </div>
+          <ul class="lista-beneficios">
+            <li class="beneficio" style="animation-delay: 0.1s">
+              <span class="icono-check">✓</span>
+              <span class="texto-beneficio"
+                >Casos reales y resultados concretos de personas como tú</span
+              >
+            </li>
+            <li class="beneficio" style="animation-delay: 0.3s">
+              <span class="icono-check">✓</span>
+              <span class="texto-beneficio"
+                >La ruta clara con pasos aplicables y sin tecnicismos</span
+              >
+            </li>
+            <li class="beneficio" style="animation-delay: 0.5s">
+              <span class="icono-check">✓</span>
+              <span class="texto-beneficio"
+                >Herramientas prácticas para empezar HOY mismo</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/contador.js"></script>
+    <script src="js/expertcard.css"></script>
+    <script type="module" src="JS/app.js"></script>
+  </body>
+</html>
